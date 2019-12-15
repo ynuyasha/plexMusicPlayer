@@ -3,5 +3,6 @@
   "description": "An Alexa Skill deployment, based on Flask-Ask to playback music from a Plex server.",
   "image": "heroku/python",
   "repository": "https://github.com/pasmer/plexMusicPlayer.git",
+  "stack": "heroku-18",
   "keywords": ["python", "flask-ask", "plex", "alexa", "amazon"]
 }
