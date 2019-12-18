@@ -1,0 +1,355 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my plex",
+            "intents": [
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ShuffleOnIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PlexPlayTrackIntent",
+                    "slots": [
+                        {
+                            "name": "track",
+                            "type": "AMAZON.MusicRecording"
+                        }
+                    ],
+                    "samples": [
+                        "riproduci {track}",
+                        "riproduci la canzone {track}",
+                        "riproduci il brano {track}",
+                        "riproduci il pezzo {track}",
+                        "riprodurre {track}",
+                        "riprodurre la canzone {track}",
+                        "riprodurre il brano {track}",
+                        "riprodurre il pezzo {track}",
+                        "metti {track}",
+                        "metti la canzone {track}",
+                        "metti il brano {track}",
+                        "metti il pezzo {track}",
+                        "mettere {track}",
+                        "mettere canzone {track}",
+                        "mettere brano {track}",
+                        "mettere pezzo {track}",
+                        "avvia {track}",
+                        "avvia canzone {track}",
+                        "avvia musica {track}",
+                        "avvia brano {track}",
+                        "avvia pezzo {track}",
+                        "fammi sentire {track}",
+                        "fammi sentire la canzone {track}",
+                        "fammi sentire la musica {track}",
+                        "fammi sentire il brano {track}",
+                        "voglio ascoltare {track}",
+                        "voglio ascoltare la canzone {track}",
+                        "voglio ascoltare la musica {track}",
+                        "voglio ascoltare il brano {track}",
+                        "volgio ascoltare il pezzo {track}"
+                    ]
+                },
+                {
+                    "name": "PlexPlayTrackByArtistIntent",
+                    "slots": [
+                        {
+                            "name": "track",
+                            "type": "AMAZON.MusicRecording"
+                        },
+                        {
+                            "name": "artist",
+                            "type": "AMAZON.MusicGroup"
+                        }
+                    ],
+                    "samples": [
+                        "riproduci {track} di {artist}",
+                        "riproduci la canzone {track} di {artist}",
+                        "riproduci il brano {track} di {artist}",
+                        "riproduci il pezzo {track} di {artist}",
+                        "riprodurre {track} di {artist}",
+                        "riprodurre la canzone {track} di {artist}",
+                        "riprodurre il brano {track} di {artist}",
+                        "riprodurre il pezzo {track} di {artist}",
+                        "metti {track} di {artist}",
+                        "metti la canzone {track} di {artist}",
+                        "metti il brano {track} di {artist}",
+                        "metti il pezzo {track} di {artist}",
+                        "mettere {track} di {artist}",
+                        "mettere canzone {track} di {artist}",
+                        "mettere brano {track} di {artist}",
+                        "mettere pezzo {track} di {artist}",
+                        "avvia {track} di {artist}",
+                        "avvia canzone {track} di {artist}",
+                        "avvia musica {track} di {artist}",
+                        "avvia brano {track} di {artist}",
+                        "avvia pezzo {track} di {artist}",
+                        "fammi sentire {track} di {artist}",
+                        "fammi sentire la canzone {track} di {artist}",
+                        "fammi sentire la musica {track} di {artist}",
+                        "fammi sentire il brano {track} di {artist}",
+                        "voglio ascoltare {track} di {artist}",
+                        "voglio ascoltare la canzone {track} di {artist}",
+                        "voglio ascoltare la musica {track} di {artist}",
+                        "voglio ascoltare il brano {track} di {artist}",
+                        "volgio ascoltare il pezzo {track} di {artist}"
+                    ]
+                },
+                {
+                    "name": "PlexPlayAlbumIntent",
+                    "slots": [
+                        {
+                            "name": "album",
+                            "type": "AMAZON.MusicAlbum"
+                        }
+                    ],
+                    "samples": [
+                        "riproduci l'album {album}",
+                        "riprodurre l'album {album}",
+                        "metti l'album {album}",
+                        "mettere l'album {album}",
+                        "avvia l'album {album}",
+                        "fammi sentire l'album {album}",
+                        "voglio ascoltare l'album {album}"
+                    ]
+                },
+                {
+                    "name": "PlexPlayAlbumByArtistIntent",
+                    "slots": [
+                        {
+                            "name": "album",
+                            "type": "AMAZON.MusicAlbum"
+                        },
+                        {
+                            "name": "artist",
+                            "type": "AMAZON.MusicGroup"
+                        }
+                    ],
+                    "samples": [
+                        "riproduci l'album {album} di {artist}",
+                        "riprodurre l'album {album} di {artist}",
+                        "metti l'album {album} di {artist}",
+                        "mettere l'album {album} di {artist}",
+                        "avvia l'album {album} di {artist}",
+                        "fammi sentire l'album {album} di {artist}",
+                        "voglio ascoltare l'album {album} di {artist}"
+                    ]
+                },
+                {
+                    "name": "PlexPlayArtistIntent",
+                    "slots": [
+                        {
+                            "name": "artist",
+                            "type": "AMAZON.MusicGroup"
+                        }
+                    ],
+                    "samples": [
+                        "riproduci un po' di {artist}",
+                        "riprodurre un po' di {artist}",
+                        "metti un po' di {artist}",
+                        "mettere un po' di {artist}",
+                        "fammi sentire un po' di {artist}",
+                        "voglio ascoltare un po' di {artist}",
+                        "riproduci canzoni di {artist}",
+                        "riprodurre canzoni di {artist}",
+                        "metti canzoni di {artist}",
+                        "mettere canzoni di {artist}",
+                        "fammi sentire canzoni di {artist}",
+                        "voglio ascoltare canzoni di {artist}"
+                    ]
+                },
+                {
+                    "name": "PlexPlayPlaylistIntent",
+                    "slots": [
+                        {
+                            "name": "playlist_name",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "riproduci la playlist {playlist_name}",
+                        "riprodurre la playlist {playlist_name}",
+                        "metti la playlist {playlist_name}",
+                        "mettere la playlist {playlist_name}",
+                        "avvia la playlist {playlist_name}",
+                        "fammi sentire la playlist {playlist_name}",
+                        "voglio ascoltare la playlist {playlist_name}",
+                        "riproduci {playlist_name} playlist",
+                        "riprodurre {playlist_name} playlist",
+                        "metti {playlist_name} playlist",
+                        "mettere {playlist_name} playlist",
+                        "avvia {playlist_name} playlist"
+                    ]
+                },
+                {
+                    "name": "PlexQueueTrackIntent",
+                    "slots": [
+                        {
+                            "name": "track",
+                            "type": "AMAZON.MusicRecording"
+                        }
+                    ],
+                    "samples": [
+                        "aggiungi la canzone {track} alla playlist",
+                        "aggiungere la canzone {track} alla playlist",
+                        "aggiungi {track} alla playlist",
+                        "aggiungere {track} alla playlist",
+                        "metti in coda la canzone {track}",
+                        "mettere in coda la canzone {track}",
+                        "metti in coda {track}",
+                        "mettere in coda {track}"
+                    ]
+                },
+                {
+                    "name": "PlexQueueTrackByArtistIntent",
+                    "slots": [
+                        {
+                            "name": "track",
+                            "type": "AMAZON.MusicRecording"
+                        },
+                        {
+                            "name": "artist",
+                            "type": "AMAZON.MusicGroup"
+                        }
+                    ],
+                    "samples": [
+                        "aggiungi la canzone {track} di {artist} alla playlist",
+                        "aggiungere la canzone {track} di {artist} alla playlist",
+                        "aggiungi {track} di {artist} alla playlist",
+                        "aggiungere {track} di {artist} alla playlist",
+                        "metti in coda la canzone {track} di {artist}",
+                        "mettere in coda la canzone {track} di {artist}",
+                        "metti in coda {track} di {artist}",
+                        "mettere in coda {track} di {artist}"
+                    ]
+                },
+                {
+                    "name": "PlexQueueAlbumIntent",
+                    "slots": [
+                        {
+                            "name": "album",
+                            "type": "AMAZON.MusicAlbum"
+                        }
+                    ],
+                    "samples": [
+                        "aggiungi l'album {album} alla playlist",
+                        "aggiungere l'album {album} alla playlist",
+                        "aggiungi l'album {album} alla playlist",
+                        "aggiungere l'album {album} alla playlist",
+                        "metti in coda l'album {album}",
+                        "mettere in coda l'album {album}",
+                        "metti in coda l'album {album}",
+                        "mettere in coda l'album {album}"
+                    ]
+                },
+                {
+                    "name": "PlexQueueAlbumByArtistIntent",
+                    "slots": [
+                        {
+                            "name": "album",
+                            "type": "AMAZON.MusicAlbum"
+                        },
+                        {
+                            "name": "artist",
+                            "type": "AMAZON.MusicGroup"
+                        }
+                    ],
+                    "samples": [
+                        "aggiungi l'album {album} di {artist} alla playlist",
+                        "aggiungere l'album {album} di {artist} alla playlist",
+                        "aggiungi l'album {album} di {artist} alla playlist",
+                        "aggiungere l'album {album} di {artist} alla playlist",
+                        "metti in coda l'album {album} di {artist}",
+                        "mettere in coda l'album {album} di {artist}",
+                        "metti in coda l'album {album} di {artist}",
+                        "mettere in coda l'album {album} di {artist}"
+                    ]
+                },
+                {
+                    "name": "PlexQueueArtistIntent",
+                    "slots": [
+                        {
+                            "name": "artist",
+                            "type": "AMAZON.MusicGroup"
+                        }
+                    ],
+                    "samples": [
+                        "aggiungi {artist} alla playlist",
+                        "aggiungere {artist} alla playlist",
+                        "aggiungi canzoni di {artist} alla playlist",
+                        "aggiungere canzoni di {artist} alla playlist",
+                        "metti in coda {artist}",
+                        "mettere in coda canzoni di {artist}"
+                    ]
+                },
+                {
+                    "name": "PlexQueuePlaylistIntent",
+                    "slots": [
+                        {
+                            "name": "playlist_name",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "aggiungi {playlist_name} playlist alla playlist",
+                        "aggiungere {playlist_name} playlist alla playlist",
+                        "metti in coda {playlist_name} playlist",
+                        "mettere in coda {playlist_name} playlist"
+                    ]
+                },
+                {
+                    "name": "PlexWhatSongIntent",
+                    "slots": [],
+                    "samples": [
+                        "dimmi il nome di questa canzone",
+                        "come si chiama questa canzone",
+                        "quale è il titolo di questa canzone"
+                    ]
+                },
+                {
+                    "name": "PlexStatusIntent",
+                    "slots": [],
+                    "samples": [
+                        "dimmi lo status update",
+                        "dammi un aggiornamento"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
