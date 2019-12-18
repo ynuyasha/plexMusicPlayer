@@ -81,10 +81,10 @@ def queuePlaylist(playlist_name):
 def whatSong():
     cur_track = queue.current
     if cur_track is None:
-        speech = "La canzone attuale non può essere richiesta in questo momento."
+        speech = "The current song could not be requested at this moment."
     else:
-        speech = "La canzone che stai ascoltando, si chiama " + cur_track.title + " di " + \
-                 cur_track.artist + ", contenuta nell'album " + cur_track.album + "."
+        speech = "The song being played, is called " + cur_track.title + " by " + \
+                 cur_track.artist + ", taken from the album " + cur_track.album + "."
     return statement(speech)
 
 

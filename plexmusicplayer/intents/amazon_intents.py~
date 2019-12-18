@@ -7,8 +7,8 @@ from plexmusicplayer import ask, queue
 # Amazon Playback - Intents
 @ask.launch
 def new_ask():
-    welcome = "Benvenuto sul tuo Plex Music Player. Cosa vuoi sentire?"
-    reprompt = "Temo di non aver capito. Potresti ripetere per favore?"
+    welcome = "Welcome to the Plex Music Player. What would you like to hear?"
+    reprompt = "I did not quite catch that. Could you repeat that please?"
     return question(welcome) \
         .reprompt(reprompt)
 
@@ -44,7 +44,7 @@ def next_song():
     if queue.whats_next:
         return audio("").play(queue.go_next().stream_url)
     else:
-        return audio("Mi spiace, qualcosa non ha funzionato selezionando la canzone succesiva.").stop()
+        return audio("Sorry, something went wrong selecting the next song.").stop()
 
 
 @ask.intent('AMAZON.PreviousIntent')
@@ -52,7 +52,7 @@ def previous_song():
     if queue.whats_prev:
         return audio("").play(queue.go_prev().stream_url)
     else:
-        return audio("Mi spiace, qualcosa non ha funzionato selezionando la conzone precedente.").stop()
+        return audio("Sorry, something went wrong selecting the previous song.").stop()
 
 
 @ask.intent('AMAZON.StartOverIntent')
