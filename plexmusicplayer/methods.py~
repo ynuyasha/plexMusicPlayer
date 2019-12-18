@@ -292,7 +292,7 @@ def processTrackQuery(track, mediaType):
     playlist = []
     try:
         track, server = parseTrackJson(processQuery(track, mediaType))
-        speech = "Playing " + track.title + " by " + track.artist + " from " + server + "."
+        speech = "Riproduco " + track.title + " di " + track.artist + " da " + server + "."
         playlist.append(track)
         return speech, playlist
     except:
@@ -304,18 +304,18 @@ def processTrackByArtistQuery(track, artist, mediaType):
     playlist = []
     try:
         track, server = parseTrackByArtistJson(processQuery(track, mediaType), artist)
-        speech = "Playing " + track.title + " by " + track.artist + " from " + server + "."
+        speech = "Riproduco " + track.title + " di " + track.artist + " da " + server + "."
         playlist.append(track)
         return speech, playlist
     except:
-        speech = "Non sono riuscita a trovare " + track + " by " + artist + " sul tuo Plex."
+        speech = "Non sono riuscita a trovare " + track + " di " + artist + " sul tuo Plex."
         return speech, []
 
 
 def processAlbumQuery(album, mediaType):
     try:
         album, artist, server, playlist = parseAlbumJson(processQuery(album, mediaType))
-        speech = "Playing " + album + " by " + artist + " from " + server + "."
+        speech = "Riproduco " + album + " di " + artist + " da " + server + "."
         return speech, playlist
     except:
         speech = "Non sono riuscita a trovare " + album + " sul tuo Plex."
@@ -325,17 +325,17 @@ def processAlbumQuery(album, mediaType):
 def processAlbumByArtistQuery(album, artist, mediaType):
     try:
         album, artist, server, playlist = parseAlbumByArtistJson(processQuery(album, mediaType), artist)
-        speech = "Playing " + album + " by " + artist + " from " + server + "."
+        speech = "Riproduco " + album + " di " + artist + " da " + server + "."
         return speech, playlist
     except:
-        speech = "Non sono riuscita a trovare " + album + " by " + artist + " sul tuo Plex."
+        speech = "Non sono riuscita a trovare " + album + " di " + artist + " sul tuo Plex."
         return speech, []
 
 
 def processArtistQuery(artist, mediaType):
     try:
         artist, server, playlist = parseArtistJson(processQuery(artist, mediaType))
-        speech = "Playing " + artist + " from " + server + "."
+        speech = "Riproduco " + artist + " da " + server + "."
         return speech, playlist
     except:
         speech = "Non sono riuscita a trovare " + artist + " sul tuo Plex."
@@ -345,7 +345,7 @@ def processArtistQuery(artist, mediaType):
 def processPlaylistQuery(playlist_name, mediaType):
     try:
         artist, server, playlist = parsePlaylistJson(processQuery(playlist_name, mediaType))
-        speech = "Playing playlist " + playlist_name + " from " + server + "."
+        speech = "Riproduco playlist " + playlist_name + " da " + server + "."
         return speech, playlist
     except:
         speech = "Non sono riuscita a trovare " + playlist_name + " sul tuo Plex."
@@ -356,7 +356,7 @@ def processQueueTrackQuery(track, mediaType):
     playlist = []
     try:
         track, server = parseTrackJson(processQuery(track, mediaType))
-        speech = "Added " + track.title + " by " + track.artist + " to queue."
+        speech = "Aggiunto " + track.title + " di " + track.artist + " alla coda."
         playlist.append(track)
         return speech, playlist
     except:
@@ -368,18 +368,18 @@ def processQueueTrackByArtistQuery(track, artist, mediaType):
     playlist = []
     try:
         track, server = parseTrackByArtistJson(processQuery(track, mediaType), artist)
-        speech = "Added " + track.title + " by " + track.artist + " to queue."
+        speech = "Aggiunto " + track.title + " di " + track.artist + " alla coda."
         playlist.append(track)
         return speech, playlist
     except:
-        speech = "Non sono riuscita a trovare " + track + " by " + artist + " sul tuo Plex."
+        speech = "Non sono riuscita a trovare " + track + " di " + artist + " sul tuo Plex."
         return speech, []
 
 
 def processQueueAlbumQuery(album, mediaType):
     try:
         album, artist, server, playlist = parseAlbumJson(processQuery(album, mediaType))
-        speech = "Added " + album + " by " + artist + " to queue."
+        speech = "Aggiunto " + album + " di " + artist + " alla coda."
         return speech, playlist
     except:
         speech = "Non sono riuscita a trovare " + album + " sul tuo Plex."
@@ -389,17 +389,17 @@ def processQueueAlbumQuery(album, mediaType):
 def processQueueAlbumByArtistQuery(album, artist, mediaType):
     try:
         album, artist, server, playlist = parseAlbumByArtistJson(processQuery(album, mediaType), artist)
-        speech = "Added " + album + " by " + artist + " to queue."
+        speech = "Aggiunto " + album + " di " + artist + " alla coda."
         return speech, playlist
     except:
-        speech = "Non sono riuscita a trovare " + album + " by " + artist + " sul tuo Plex."
+        speech = "Non sono riuscita a trovare " + album + " di " + artist + " sul tuo Plex."
         return speech, []
 
 
 def processQueueArtistQuery(artist, mediaType):
     try:
         artist, server, playlist = parseArtistJson(processQuery(artist, mediaType))
-        speech = "Added " + artist + " to queue."
+        speech = "Aggiunto " + artist + " alla coda."
         return speech, playlist
     except:
         speech = "Non sono riuscita a trovare " + artist + " sul tuo Plex."
@@ -409,7 +409,7 @@ def processQueueArtistQuery(artist, mediaType):
 def processQueuePlaylistQuery(playlist_name, mediaType):
     try:
         playlist_name, server, playlist = parsePlaylistJson(processQuery(playlist_name, mediaType))
-        speech = "Added playlist " + playlist_name + " to queue."
+        speech = "Aggiunta playlist " + playlist_name + " alla coda."
         return speech, playlist
     except:
         speech = "Non sono riuscita a trovare " + playlist_name + " sul tuo Plex."

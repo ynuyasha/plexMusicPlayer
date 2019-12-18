@@ -255,7 +255,7 @@ def processQuery(query, mediaType):
         if query:
             json_obj = callPlex(query, mediaType)
     if json_obj['MediaContainer']['@size'] == '0':
-        raise LookupError("No results could be found")
+        raise LookupError("Non è stato trovato nessun risultato")
     return json_obj
 
 

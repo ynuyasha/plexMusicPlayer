@@ -15,8 +15,8 @@ class QueueManager(object):
     @property
     def status(self):
         playlist_count = len(self._playlist)
-        status = 'Ecco lo status: Canzoni in coda ' + str(playlist_count) + \
-                 ' | Questa canzone è ' + str(self.current) + " | le canzoni mancanti da riprodurre sono: "
+        status = 'Current Queue Status: Songs in Queue ' + str(playlist_count) + \
+                 ' | Current Song is ' + str(self.current) + " | Songs left to Play are: "
         for i in range(self._counter.value + 1, len(self._playlist)):
             status += str(self._playlist[i]) + ', '
         return status
