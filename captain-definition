@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "dockerfileLines": [
     "FROM library/python:3.6.9",
-    "RUN apt-get update && apt-get -y upgrade && apt-get -y install make g++ bash git openssh libffi-dev python-dev curl",
+    "RUN apt-get update && apt-get -y upgrade && apt-get -y install make g++ bash git libffi-dev python-dev curl",
     "RUN mkdir -p /usr/src/app",
     "WORKDIR /usr/src/app",
     "COPY ./plexmusicplayer/ /usr/src/app",
